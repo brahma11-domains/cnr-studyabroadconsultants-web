@@ -24,9 +24,9 @@ async function loadInclude(selector, url) {
 
 async function initIncludes() {
   await Promise.all([
-    loadInclude('#topbar-placeholder', '/includes/topbar.html'),
-    loadInclude('#header-placeholder', '/includes/header.html'),
-    loadInclude('#footer-placeholder', '/includes/footer.html'),
+    loadInclude('#topbar-placeholder', './includes/topbar.html'),
+    loadInclude('#header-placeholder', './includes/header.html'),
+    loadInclude('#footer-placeholder', './includes/footer.html'),
   ]);
   initNav();
   initReveal();
